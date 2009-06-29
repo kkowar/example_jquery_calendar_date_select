@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="column span-6">
+    &nbsp;
+  </div>
+  <div class="column span-18">
+    <h1 style="width:100%;text-align:center;padding: 50px 0 25px 0;">jQuery Calendar Date Select Example Application</h1>
+    <div>
+      <div  style="float:left;">
+        <h3 class="offBlack">Using the plugin with an input element</h3>
+        <div>
+          <label>Blank Input:</label>
+          <input class="jqueryCDS" type="text" value="">
+        </div>
+        <br/>
+        <div>
+          <label>Time Filled In:</label>
+          <input class="jqueryCDS" type="text" value="<%= @now %>">
+        </div>
+      </div>
+      <div id="div_example">
+        <h3 class="offBlack">Using the plugin with a div element</h3>
+        <div class="jqueryCDS">&nbsp;</div>
+      </div>
+    </div>
+    <div id="span_example">
+      <h3 class="offBlack">Using the plugin with a span element</h3>
+      <div>
+        <span class="jqueryCDS" style="float:left;padding-right:25px;text-align:center;">Calendar #1</span>
+        <span id="date_no_time" style="float:left;padding-right:25px;text-align:center;">Calendar #2 (No Time)</span>
+        <span class="jqueryCDS" style="float:left">&nbsp;</span>
+      </div>
+    </div>
+  </div>
+  <div class="column span-6 last">
+    &nbsp;
+  </div>
+  <div class="column span-30 footer">Rails Signals</div>
+</div>

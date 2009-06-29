@@ -1,0 +1,13 @@
+== Example Application for the jquery_calendar_date_select plugin
+   
+   If you want to play:
+   
+   script/server
+   
+   If you want to read:
+   
+   /app/views/layouts/application.html.erb
+   /public/javascripts/application.js
+   /app/views/calendars/index.html.erb
+   
+== More to come soon...

@@ -1,0 +1,1107 @@
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:29:25) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:29:47) [GET]
+Rendering calendars/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:33:19) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:39:00) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:39:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/calendar_date_select/jquery.calendardateselect.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:39:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:40:06) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:40:10) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:40:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/calendar_date_select/jquery.calendardateselect.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:40:10) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:40:14) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:40:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/calendar_date_select/jquery.calendardateselect.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:40:14) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:41:02) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:41:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/calendar_date_select/jquery.calendardateselect.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:41:03) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:41:47) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:41:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/calendar_date_select/jquery.calendardateselect.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:41:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:42:05) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+ERROR: compiling _run_erb_app47views47calendars47index46html46erb RAISED compile error
+/Users/railssignals/railssignals/apps/example_jquery_calendar_date_select/app/views/calendars/index.html.erb:14: syntax error, unexpected kENSURE, expecting ')'
+/Users/railssignals/railssignals/apps/example_jquery_calendar_date_select/app/views/calendars/index.html.erb:16: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47calendars47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>jQuery Calendar Date Select Example Application</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<h3>Using the plugin with an input element</h3>\n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "  <input id=\"jqueryCDS\" type=\"text\" value=\""; @output_buffer.concat(( #{@now} ).to_s); @output_buffer.concat "\">\n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "<h3>Using the plugin with a span element</h3>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <span class=\"jqueryCDS\">&nbsp;</span>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<h3>Using the plugin with a div element</h3>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <div class=\"jqueryCDS\">&nbsp;</div>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/railssignals/railssignals/apps/example_jquery_calendar_date_select/app/views/calendars/index.html.erb:16:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/railssignals/railssignals/apps/example_jquery_calendar_date_select/app/views/calendars/index.html.erb:14: syntax error, unexpected kENSURE, expecting ')'
+/Users/railssignals/railssignals/apps/example_jquery_calendar_date_select/app/views/calendars/index.html.erb:16: syntax error, unexpected kEND, expecting ')') on line #14 of app/views/calendars/index.html.erb:
+11: <h3>Using the plugin with a div element</h3>
+12: 
+13:   <div class="jqueryCDS">&nbsp;</div>
+
+    app/views/calendars/index.html.erb:16:in `compile!'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (2.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:42:33) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:42:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/calendar_date_select/jquery.calendardateselect.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:42:33) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:43:21) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:43:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/calendar_date_select/jquery.calendardateselect.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:43:22) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:44:50) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:44:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/calendar_date_select/jquery.calendardateselect.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:44:50) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:45:23) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:45:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/calendar_date_select/jquery.calendardateselect.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:45:23) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:47:04) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:47:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:47:29) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:47:29) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:47:33) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:47:34) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:48:15) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:48:15) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:48:37) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:48:37) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:49:00) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:49:01) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:49:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:50:05) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:50:06) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:50:22) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-28 23:50:23) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/javascripts/calendar_date_select/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:51:36) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:53:06) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:53:45) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:55:07) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:55:34) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 72ms (View: 70, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:55:54) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:56:14) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:56:40) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:57:02) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:57:13) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:57:36) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-28 23:58:36) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:00:33) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:00:56) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:01:30) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:01:43) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:01:54) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:02:39) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:03:02) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:04:19) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:05:03) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:05:27) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:05:44) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:05:57) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 72ms (View: 70, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:06:27) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:06:37) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:11:43) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-29 00:11:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-29 00:11:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:12:38) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:15:58) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:16:20) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:16:43) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:17:24) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:18:01) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:18:40) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:18:55) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:19:08) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:20:03) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:20:15) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:20:48) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:21:13) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 73ms (View: 71, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:21:34) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:22:15) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:25:34) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:26:37) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:26:54) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:28:24) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:28:50) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:29:13) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:29:56) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:30:27) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:30:51) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:31:34) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:32:00) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:32:12) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:32:22) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:35:32) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:36:16) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:36:19) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:36:51) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:37:17) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:37:33) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:37:55) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:38:07) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:38:56) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:39:23) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:39:57) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:40:08) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:40:19) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:40:43) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:42:10) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:42:49) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:44:17) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:45:04) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:45:31) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:46:00) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:46:17) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:47:48) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:48:35) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:49:30) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:50:27) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:51:04) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:51:51) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:52:24) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:52:46) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:53:06) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:54:08) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 00:54:58) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 01:12:53) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-29 01:12:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/calendar_date_select/jquery.calendardateselect.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-29 01:12:54) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/jquery/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-29 01:12:54) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/jquery/jquery.string.1.0.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-29 01:12:54) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/jquery/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 01:20:42) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-29 01:20:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/jquery/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-29 01:20:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/jquery/jquery.string.1.0.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-29 01:20:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/jquery/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 01:22:00) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-29 01:22:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/jquery/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-29 01:22:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/jquery/jquery.string.1.0.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-29 01:22:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/calendar_date_select/jquery/jquery.calendardateselect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 01:25:45) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 01:27:10) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing CalendarsController#index (for 127.0.0.1 at 2009-06-29 01:31:22) [GET]
+Rendering template within layouts/application
+Rendering calendars/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]

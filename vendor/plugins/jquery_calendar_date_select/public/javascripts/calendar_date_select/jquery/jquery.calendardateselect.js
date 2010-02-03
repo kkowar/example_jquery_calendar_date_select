@@ -51,10 +51,11 @@
   $.extend(jqueryCalendarDateSelect.prototype, {
     
     parseDate: function (parent){
-
       var p = parent.dts;
-      
-      var value = $.trim($(parent).val());
+			var nodeName = parent.nodeName.toLowerCase();
+			if (nodeName == "input") var value = $.trim($(parent).val());
+			// TODO: add error handling if the value attribute is not present.
+			if (p.options.embedded) var value = $.trim($(parent).attr("value"));
       p.selection_made = (value != "");
       p.date = value == "" ? NaN : Date.parseFormattedString(p.options.date || value);
       if (isNaN(p.date)) {
@@ -94,7 +95,8 @@
     
     createCalendarDiv: function (element) {
       var p = element.dts;
-
+			//$.inspect(p,'window');
+			//var nodeName = parent.nodeName.toLowerCase();
       if (p.options.embedded) {
         var parent = element;
         var style = {padding: "10px"};
@@ -109,9 +111,10 @@
         var parent = document.body;
         var style = { position:"absolute", display: "none", top: 0, left: 0, padding: "10px" };
       }
-
       var calendar_div = $(parent).build('div', {className: "calendar_date_select", id: p.id}, style);
-      
+			// TODO: Add error handling if name attribute is not present.
+			if (p.options.embedded) var calendar_div_hidden = $(parent).build('input', {id: p.id + "_hidden", type: "hidden", name: $(parent).attr("name"), value: "" });
+      if (p.options.embedded) $(parent).removeAttr("name");
       // Create header, body, buttons, footer, and bottom divs.
       var top_div = $(calendar_div).build('div', { className: "cds_top" }, { clear: 'left'} );
       var header_div = $(calendar_div).build('div', { className: "cds_header" }, { clear: 'left'} );
@@ -135,7 +138,7 @@
       var p = parent.dts;
       var header_div = element;
       
-      // TODO - update close_button
+      // TODO - update close_button. Currently Not used.
       var close_button = $(header_div).build("a", { innerHTML: "x", href:"#", className: "close" });
       $(close_button).bind("click", function() { $.datetimeselect.close(parent); });
           
@@ -179,7 +182,7 @@
       var p = parent.dts;
       var buttons_div = element;
 
-      if (p.options.time) {
+      if (p.options.time == "mixed" || p.options.time == "true" ) {
         var blank_time = new Array();
         var o = new Object();
         if (p.options.time == "mixed") {
@@ -230,35 +233,34 @@
         p.minute_select = new SelectBox;
         p.minute_select.initialize(buttons_div, blank_time, { className: "minute" });
         $(p.minute_select.element).bind("change",function() { $.datetimeselect.updateSelectedDate({ minute: this.value },parent);});
-      } else if (! p.options.buttons) $(buttons_div).remove();
+      } else if (p.options.buttons == "false") $(buttons_div).remove();
     
       if (p.options.buttons) {
         var selector = '#' + p.id;
         // Today
         $(buttons_div).build("span", {innerHTML: "&#160;"});
-        if ((p.options.time) == "mixed" || !p.options.time) { 
+        if (p.options.time == "mixed" || p.options.time == "false") { 
           var b = $(buttons_div).build("a", {innerHTML: "Today", href: "#", className: "today_button"});
           $(b).bind("click", function() {$.datetimeselect.today(false,parent); return false;});
         }
         // Separator
-        if ((p.options.time) == "mixed") $(buttons_div).build("span", {innerHTML: "&#160;|&#160;", className:"button_seperator"});
+        if (p.options.time == "mixed" || p.options.time == "true") $(buttons_div).build("span", {innerHTML: "&#160;|&#160;", className:"button_seperator"});
         // Now
-        if (p.options.time) {
+        if (p.options.time == "mixed") {
           var b = $(buttons_div).build("a", {innerHTML: "Now", href: "#", className: "now_button" });
           $(b).bind("click", function() {$.datetimeselect.today(true,parent); return false;});
-        }
-        // closeOnClickTODO - Check out the closeOnClick stuff.
-        if ((!p.options.embedded) && !this.closeOnClick(parent))
-        {
-          $(buttons_div).build("span", {innerHTML: "&#160;|&#160;", className:"button_seperator"})
-          var b = $(buttons_div).build("a", { innerHTML: "OK", href: "#", className: "ok_button" });
-          $(b).bind("click", function() {$.datetimeselect.close(parent); return false;});
         }
         // Clear
         if (p.options.clear_button) {
           $(buttons_div).build("span", {innerHTML: "&#160;|&#160;", className:"button_seperator"})
           var b = $(buttons_div).build("a", { innerHTML: "Clear", href: "#", className: "clear_button" });
-          $(b).bind("click", function() {$.datetimeselect.clearDate(parent); if (!p.options.embedded) $.datetimeselect.close(parent); return false; return false; });
+          $(b).bind("click", function() {$.datetimeselect.clearDate(parent); return false;});
+        }
+        // closeOnClickTODO - Check out the closeOnClick stuff.
+        if ((!p.options.embedded) && !this.closeOnClick(parent)) {
+          $(buttons_div).build("span", {innerHTML: "&#160;|&#160;", className:"button_seperator"})
+          var b = $(buttons_div).build("a", { innerHTML: "OK", href: "#", className: "ok_button" });
+          $(b).bind("click", function() {$.datetimeselect.close(parent); return false;});
         }
       }
     },
@@ -303,7 +305,11 @@
       hover_date.setYear(p.calendar_day_grid[index].year); 
       hover_date.setMonth(p.calendar_day_grid[index].month); 
       hover_date.setDate(p.calendar_day_grid[index].day);
-      this.updateFooter(parent,hover_date.toFormattedString(p.use_time));
+			if (p.options.time == "mixed" || p.options.time == "true") {
+      	this.updateFooter(parent,hover_date.toFormattedString(p.use_time));
+			} else if (p.options.time == "false") {
+      	this.updateFooter(parent,hover_date.toFormattedString(false));				
+			};
     },
   
     dayHoverOut: function(element,parent) { 
@@ -318,6 +324,8 @@
       } else {
         var parts = partsOrElement;
       }
+
+			// TODO: work on using the disabled, readOnly, and popup force options.
       if ((parent.disabled || parent.readOnly) && p.options.popup != "force") return false;
         
       if (parts.day) {
@@ -339,12 +347,12 @@
       } else if (!isNaN(parts.hour) || !isNaN(parts.minute)) {
         this.setUseTime(true,parent);
       }
-      
+			
       this.updateFooter(parent);
       this.setSelectedClass(parent);
-      
-      if (p.selection_made) this.updateValue(parent);
-      if (this.closeOnClick(parent)) { this.close(parent); }
+
+      //if (p.selection_made) this.updateValue(parent);
+      if (this.closeOnClick(parent)) this.close(parent);
       if (index && !p.options.embedded) {
         if ((new Date() - p.last_click_at) < 333) this.close(parent);
         p.last_click_at = new Date();
@@ -352,8 +360,14 @@
     },
     
     updateValue: function (parent) {
-      var last_value = parent.value;
-      $(parent).val(this.dateString(parent));
+			// TODO: cleanup old code
+      //var last_value = parent.value;
+			alert("updateValue");
+			if (parent.dts.options.embedded == true) {
+				$("#" + parent.dts.id + "_hidden").val(this.dateString(parent));
+			} else {
+				$(parent).val(this.dateString(parent));
+			}
       //if (last_value!=g.target_element.value) 
         // TODO - callbacks
         //callback("onchange");
@@ -363,13 +377,20 @@
       var selector = '#' + parent.dts.id + ' > .cds_footer'
       if (!text) text = this.dateString(parent); 
         $(selector).children().remove(); 
-        $(selector).build("span", {innerHTML: text });      
+        $(selector).build("span", {innerHTML: text });    
+  		if (parent.dts.options.embedded == true) 
+				selector = '#' + parent.dts.id + ' > .cds_footer > span';
+				text = $(selector).html();
+				if (text == "&nbsp;") text = "";
+				$("#" + parent.dts.id + "_hidden").val(text);
     },
     
     setUseTime: function (turn_on,parent) {
       var p = parent.dts;
-      // force use_time to true if time==true && time!="mixed"
-      p.use_time = p.options.time && (p.options.time == "mixed" ? turn_on : true) 
+      // TODO: force use_time to true if time==true && time!="mixed"
+			// TODO: double check that the switch in the conditional check didn't screw up something else
+			//p.use_time = p.options.time && (p.options.time == "mixed" ? turn_on : true) 
+      p.use_time = p.options.time && (p.options.time == "mixed" ? true : turn_on) 
       if (p.use_time && p.selected_date) { // only set hour/minute if a date is already selected
         var minute = Math.floor_to_interval(p.selected_date.getMinutes(), p.options.minute_interval);
         var hour = p.selected_date.getHours();
@@ -420,12 +441,17 @@
       var p = parent.dts;
       var selector = '#' + p.id;
       var button = "";
-      button = $(p.hour_select.element);
-      button.unbind("change");
-      button.bind("change",function() { $.datetimeselect.updateSelectedDate({ hour: this.value },parent); });
-      button = $(p.minute_select.element);
-      button.unbind("change");
-      button.bind("change",function() { $.datetimeselect.updateSelectedDate({ minute: this.value },parent); });
+			if (p.options.time == "mixed" || p.options.time == "true") {
+				if (p.hour_select) {
+	        button = $(p.hour_select.element);
+	        button.unbind("change");
+	        button.bind("change",function() { $.datetimeselect.updateSelectedDate({ hour: this.value },parent); });
+	      } if (p.minute_select) {
+	        button = $(p.minute_select.element);
+	        button.unbind("change");
+	        button.bind("change",function() { $.datetimeselect.updateSelectedDate({ minute: this.value },parent); });
+	      }
+			}
       button = $('#' + p.id + ' > .cds_header > .next');
       button.unbind("click");
       button.bind("click", function() { $.datetimeselect.navMonth(p.date.getMonth() + 1,parent); this.blur(); return false; });
@@ -443,7 +469,8 @@
       button.bind("click", function() {$.datetimeselect.close(parent); return false;});
       button = $('#' + p.id + ' > .cds_buttons > .clear_button');
       button.unbind("click");
-      button.bind("click", function() {$.datetimeselect.clearDate(parent); if (!p.options.embedded) $.datetimeselect.close(parent); return false; return false; });
+      button.bind("click", function() {$.datetimeselect.clearDate(parent); return false; });
+      //button.bind("click", function() {$.datetimeselect.clearDate(parent); if (!p.options.embedded) $.datetimeselect.close(parent); return false; });
     },
   
     refreshCalendarGrid: function (parent) {
@@ -506,7 +533,7 @@
     },
     
     /* Close date time select if clicked elsewhere. */
-	  checkExternalClick: function (dts_id,clicked_element) {
+	  checkExternalClick: function (parent,dts_id,clicked_element) {
 	    if ($('#' + dts_id).css('display') == 'none') {
 	      return;
 	    } else {
@@ -525,9 +552,6 @@
 	  clearDate: function(parent) {
 	    var p = parent.dts;
       if ((parent.disabled || parent.readOnly) && p.options.popup != "force") return false;
-      //var last_value = this.value;
-      //this.value = "";
-      $(parent).val("");
       p.selection_made = false;
       this.clearSelectedClass(parent);
       this.updateFooter(parent,'&#160;');
@@ -537,10 +561,20 @@
         // TODO - callbacks
         //callback("onchange");
     },
-      
+    
+    // Linked to "OK", "Close", and "x"
     close: function(parent) {
+			var p = parent.dts;
+			var selector = '#' + parent.dts.id + ' > .cds_footer > span';
+			if ($(selector).html() == "&nbsp;") { 
+				parent.value = "";
+			} else {
+				parent.value = $(selector).html();
+			}
       if (this.iframe) $(this.iframe).remove();
-      $('#' + parent.dts.id).hide('fast'); return false;
+      $('#' + p.id).hide('fast'); //return false;
+			$(parent).focus();
+			$(parent).blur();
       // TODO
       //if (this.closed) return false;
       // TODO - callbacks
@@ -587,16 +621,40 @@
       if ( ! now ) o = $.extend(o,{hour: "", minute: ""}); 
       this.updateSelectedDate(o,parent);
       this.refresh(parent);
+			if (parent.dts.options.embedded == true) this.updateValue(parent);
     },
     
     repositionCalendar: function (parent) {
+			// TODO: Cleanup and organize code in repositionCalendar
+			// var dpWidth = inst.dpDiv.outerWidth();
+			// var dpHeight = inst.dpDiv.outerHeight();
+			// var inputWidth = inst.input ? inst.input.outerWidth() : 0;
+			// var inputHeight = inst.input ? inst.input.outerHeight() : 0;
+			var viewWidth = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) + $(document).scrollLeft();
+			var viewHeight = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) + $(document).scrollTop();
+			//alert("viewWidth: " + viewWidth + " , viewHeight: " + viewHeight);
+			// 
+			// offset.left -= (this._get(inst, 'isRTL') ? (dpWidth - inputWidth) : 0);
+			// offset.left -= (isFixed && offset.left == inst.input.offset().left) ? $(document).scrollLeft() : 0;
+			// offset.top -= (isFixed && offset.top == (inst.input.offset().top + inputHeight)) ? $(document).scrollTop() : 0;
+			// 
+			//alert(parent.border.width);
+			//alert($(document).scrollTop());
       var e = $('#' + parent.dts.id);
       var top = $(parent).offset().top;
       var left = $(parent).offset().left;
-      e.css({'top' : top});
+			//alert("Top: " + top + ", Left: " + left);
+      var width = e.outerWidth();
+      var height = e.outerHeight();
+			//var parent_height = parent.outerHeight;
+			//if parentparent.dts.reposition_count = 
+			//alert("Height: " + height + ", Width: " + width);
+			// // now check if datepicker is showing outside window viewport - move to a better place if so.
+			top -= (top + height > viewHeight && viewHeight > height) ? Math.abs(top + height + 20 - viewHeight) : 0;
+			//repositioned_left -= (left + width > viewWidth && viewWidth > width) ? Math.abs(left + width - viewWidth) : 0;
+			//if (top != repositioned_top) top = 
+			e.css({'top' : top});
       e.css({'left' : left});
-      var width = e.width();
-      var height = e.height();
       // draw an iframe behind the calendar -- ugly hack to make IE 6 happy
       if(navigator.appName=="Microsoft Internet Explorer") this.iframe = $(document.body).build("iframe", {src: "javascript:false", className: "ie6_blocker"}, { left: left, top: top, height: height+"px", width: width+"px", border: "0px"})
     },
@@ -604,11 +662,11 @@
     setup: function (element) {
       var e = element;
       var nodeName = e.nodeName.toLowerCase();
-    
       if(nodeName == 'input') {
         e.dts.id = "dts_common";
+				e.dts.reposition_count = 0
         $(e).bind("mousedown", function() { e.focus(); $.datetimeselect.open(e); return false; });
-        $(document).bind("mousedown", function(event) { $.datetimeselect.checkExternalClick("dts_common",event.target); });
+        $(document).bind("mousedown", function(event) { $.datetimeselect.checkExternalClick(e,"dts_common",event.target); });
         if (!this.initialized) {
           this.createCalendarDiv(e);
           this.common_calendar_day_grid = e.dts.calendar_day_grid;
@@ -632,11 +690,11 @@
     
   });
   
-  /*
-  function keyPress() {
-    alert("keyPress");
-    //if (this.keyCode==Event.KEY_ESC) $(this).close(parent);
-  };*/
+  
+  // function keyPress() {
+  //   alert("keyPress");
+  //   //if (this.keyCode==Event.KEY_ESC) $(this).close(parent);
+  // };
  
   //
   // private function for debugging
@@ -768,7 +826,7 @@ $.fn.datetimeselect = function(options){
 $.datetimeselect = new jqueryCalendarDateSelect(); // singleton instance
 $.datetimeselect.initialized = false;
 $.datetimeselect.uuid = new Date().getTime();
-$.datetimeselect.version = "0.0.1";
+$.datetimeselect.version = "0.0.2";
 $.datetimeselect.count = 0;
 
 })(jQuery);

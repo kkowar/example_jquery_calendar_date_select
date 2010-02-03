@@ -75,7 +75,7 @@ iframe.ie6_blocker {
 
 .calendar_date_select .cds_buttons a {
   color: white;
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .calendar_date_select table {
@@ -104,9 +104,12 @@ iframe.ie6_blocker {
   text-align:center;
   vertical-align: middle;
   background-color: #fff;
+	border: 1px solid #fff;
 }
 .calendar_date_select td.weekend {
   background-color: #eee;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
   border-left:1px solid #ddd;
   border-right:1px solid #ddd;
 }
@@ -119,7 +122,8 @@ iframe.ie6_blocker {
 }
 
 .calendar_date_select td:hover {
-  background-color:#ccc;
+  background-color: #ccc;
+	border: 1px solid #ccc;
 }
 
 .calendar_date_select td.today {
@@ -129,11 +133,11 @@ iframe.ie6_blocker {
 }
 
 .calendar_date_select td.selected div {
-  color:white;
+  color: white;
 }
 .calendar_date_select td.selected {
   background-color:#777;
-  border: none;
+  border: 1px solid #777;
 }
 
 .calendar_date_select td.disabled div {

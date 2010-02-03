@@ -1,3 +1,14 @@
+== Version 0.0.2
+
+ * Added ability for embedded calendar (ie. div or span) to get a date from the "value" attribute if provided.
+ * Fixed issue where if the user clicked out of the calendar the value selected in the calendar would overwrite
+   the value in the input box.  Now the value is only transferred to the input box when "ok" is pressed.
+ * Added approximate screen detection to reposition the calendar if it appears so that it will not display off screen.
+
+== Version 0.0.1
+
+ * Original port to jquery
+
 == Version 1.15
  * Bugfix: don't include the :image option in the input field
 

@@ -23,16 +23,33 @@ A jQuery based version of the calendardateselect plugin.
       
   4. Add elements in your pages with the class or id that matches [selector]
      
-     Input Elements will show a Calendar in response to the onClick event.
-     <input class="[selector]"> OR <input id="[selector]">
+     INPUT Elements
      
-     Div and Span Elements will have the calendar placed within them and always show the Calendar.
-     <div class="[selector]"> OR <div id="[selector]">
-     <span class="[selector]"> OR <span id="[selector]">
+       Input Elements will show a Calendar in response to the onClick event.
+       <input class="[selector]"> OR <input id="[selector]">
+     
+       To place existing date/time information into the calendar set the value attribute.
+       <input value="[existing date or time formatted to a javascript parsable format]">
+     
+     DIV and SPAN Elements
+     
+       Div and Span Elements will have the calendar placed within them and always show the Calendar.
+       <div class="[selector]"> OR <div id="[selector]">
+       <span class="[selector]"> OR <span id="[selector]">
+       
+       To place existing date/time information into the calendar create a value attribute.
+       <div value="[existing date or time formatted to a javascript parsable format]">
+       <span value="[existing date or time formatted to a javascript parsable format]">
      
 = Configuration
-
-  Coming soon...
+  
+  Create a calendar that uses date and time for a .date selector.
+  $('.date').datetimeselect();
+  OR
+  $('.date').datetimeselect({time: 'true'});
+  
+  Create a calendar that uses only the date for a .datenotime selector.
+  $('.datenotime').datetimeselect({time: 'false'});
      
 = TODO:
 
@@ -46,7 +63,7 @@ http://code.google.com/p/calendardateselect/
 
 == Examples
 
-"See a demo here":http://electronicholas.com/calendar
+  Coming Soon...
 
 == Submitting patches
 
